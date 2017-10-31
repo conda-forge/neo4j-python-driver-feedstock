@@ -1,6 +1,6 @@
 {% set name='neo4j-python-driver' %}
-{% set version='1.3.1' %}
-{% set sha256='28cd64a4329ef228dfdd7fb85505421f9d72102cbc16402b26194b25fb79bab5' %}
+{% set version='1.5.0' %}
+{% set sha256='a5eab2123df734896912bbdececefd3ae4e3fe2c0e72e87136ba2776d03ed0b8' %}
 
 package:
   name: {{ name }}
