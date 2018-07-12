@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/neo4j/neo4j-python-driver/archive/{{ version }}.tar.gz
-  sha256: 28cd64a4329ef228dfdd7fb85505421f9d72102cbc16402b26194b25fb79bab5
+  sha256: e989aca14274d70e4afd2b3bcc42aebd9e0dcd5bda12f465f3ef8db7c54aabe0
 
 build:
   number: 0
