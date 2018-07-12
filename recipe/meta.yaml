@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python
+    - neotime
 
 test:
   imports:
