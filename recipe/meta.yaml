@@ -1,28 +1,27 @@
-{% set name='neo4j-python-driver' %}
-{% set version='1.3.1' %}
-{% set sha256='28cd64a4329ef228dfdd7fb85505421f9d72102cbc16402b26194b25fb79bab5' %}
+{% set version = "1.6.1" %}
 
 package:
-  name: {{ name }}
+  name: neo4j-python-driver
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/neo4j/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/neo4j/neo4j-python-driver/archive/{{ version }}.tar.gz
+  sha256: e989aca14274d70e4afd2b3bcc42aebd9e0dcd5bda12f465f3ef8db7c54aabe0
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
   number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
     - python
     - cython
-    - setuptools
+    - pip
   run:
     - python
+    - neotime
 
 test:
   imports:

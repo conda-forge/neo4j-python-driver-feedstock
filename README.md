@@ -14,14 +14,16 @@ Summary: Database connector for Neo4j graph database
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/neo4j-python-driver-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/neo4j-python-driver-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/neo4j-python-driver-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/neo4j-python-driver-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/neo4j-python-driver-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/neo4j-python-driver-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/neo4j-python-driver-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/neo4j-python-driver-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/neo4j-python-driver-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/neo4j-python-driver-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/neo4j-python-driver-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/neo4j-python-driver-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/neo4j-python-driver/badges/version.svg)](https://anaconda.org/conda-forge/neo4j-python-driver)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/neo4j-python-driver/badges/downloads.svg)](https://anaconda.org/conda-forge/neo4j-python-driver)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-neo4j--python--driver-green.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) |
 
 Installing neo4j-python-driver
 ==============================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
