@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python
-    - neotime <2,>=1.7.1
-    - neobolt <2,>=1.7.4
+    - neotime <2
+    - neobolt <2
 
 test:
   imports:
@@ -39,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - pvanheus
+    - thebestnom
