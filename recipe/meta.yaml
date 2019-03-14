@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 
 package:
   name: neo4j-python-driver
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/neo4j/neo4j-python-driver/archive/{{ version }}.tar.gz
-  sha256: fd64afe11969fea43c2671a2ad12d22818f80c9804d261ecff5db9e8e7829fae
+  sha256: a4ef4d46564f7bef3ffb2da154748c1af5fbb2eafc769616c9bc933738a8115e
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -21,7 +21,8 @@ requirements:
     - pip
   run:
     - python
-    - neotime
+    - neotime <2,>=1.7.1
+    - neobolt <2,>=1.7.4
 
 test:
   imports:
@@ -38,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - pvanheus
+    - thebestnom
