@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About neo4j-python-driver
 =========================
 
@@ -18,9 +14,14 @@ Summary: Database connector for Neo4j graph database
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/neo4j-python-driver-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/neo4j-python-driver-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/neo4j-python-driver-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/neo4j-python-driver-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/neo4j-python-driver-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/neo4j-python-driver-feedstock/branch/master)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -115,4 +116,5 @@ Feedstock Maintainers
 =====================
 
 * [@pvanheus](https://github.com/pvanheus/)
+* [@thebestnom](https://github.com/thebestnom/)
 
