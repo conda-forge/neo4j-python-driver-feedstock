@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - neotime >=1.7.1,<1.7.2
-    - neobolt >=1.7.13,1.7.14
+    - neobolt >=1.7.13,<1.7.14
 
 test:
   imports:
