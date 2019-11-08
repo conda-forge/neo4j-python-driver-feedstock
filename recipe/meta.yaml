@@ -9,8 +9,8 @@ source:
   sha256: 88189f013c56a613f2fa779409d6710658a23a2e5a0bc54994af4855affbf357
 
 build:
+  number: 1
   noarch: python
-  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python
-    - neotime ~=1.7.1
-    - neobolt ~=1.7.13
+    - neotime >=1.7.1,<1.7.2
+    - neobolt >=1.7.13,<1.7.14
 
 test:
   imports:
