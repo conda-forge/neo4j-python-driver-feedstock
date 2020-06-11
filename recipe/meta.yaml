@@ -1,4 +1,4 @@
-{% set version = "1.7.6" %}
+{% set version = "4.0.0" %}
 
 package:
   name: neo4j-python-driver
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/neo4j/neo4j-python-driver/archive/{{ version }}.tar.gz
-  sha256: b58e28f397a1defd8debe32c3ccd1bf19c31d9265598832615955cffec2910df
+  sha256: c65c60c587da02da30080d34c66118482aa208c7c610ec0ca9b7f243ea74dde8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   home: https://github.com/neo4j/neo4j-python-driver
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'Database connector for Neo4j graph database'
+  summary: Database connector for Neo4j graph database
 
 extra:
   recipe-maintainers:
