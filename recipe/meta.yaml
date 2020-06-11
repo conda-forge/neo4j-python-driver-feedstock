@@ -27,8 +27,6 @@ requirements:
 test:
   imports:
     - neo4j
-    - neo4j.compat
-    - neo4j.v1
 
 about:
   home: https://github.com/neo4j/neo4j-python-driver
