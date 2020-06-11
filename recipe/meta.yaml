@@ -22,8 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - neotime >=1.7.1,<1.8.0
-    - neobolt >=1.7.15,<1.8.0
+    - pytz
 
 test:
   imports:
