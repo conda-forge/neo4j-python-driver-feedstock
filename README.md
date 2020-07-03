@@ -5,7 +5,7 @@ Home: https://github.com/neo4j/neo4j-python-driver
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Database connector for Neo4j graph database
 
