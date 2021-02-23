@@ -116,4 +116,5 @@ Feedstock Maintainers
 
 * [@pvanheus](https://github.com/pvanheus/)
 * [@thebestnom](https://github.com/thebestnom/)
+* [@xylar](https://github.com/xylar/)
 
