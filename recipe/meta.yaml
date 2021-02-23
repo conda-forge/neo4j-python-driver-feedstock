@@ -5,28 +5,30 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/neo4j/neo4j-python-driver/archive/{{ version }}.tar.gz
-  sha256: 60e5a529e1262a1d73ff378c337d03dcf7bbd84b638e0ce5ace2f90846cdddc7
+  url: https://pypi.io/packages/source/n/neo4j/neo4j-{{ version }}.tar.gz
+  sha256: b6c49fbd60426e268ed4afbd414766444fe70aee1ac0376a0c871d75526b8251
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
-    - {{ compiler('c') }}
   host:
-    - python
-    - cython
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - pytz
 
 test:
   imports:
     - neo4j
+    - neo4j.graph
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/neo4j/neo4j-python-driver
@@ -38,3 +40,4 @@ extra:
   recipe-maintainers:
     - pvanheus
     - thebestnom
+    - xylar
