@@ -5,7 +5,7 @@ Home: https://github.com/neo4j/neo4j-python-driver
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neo4j-python-driver-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neo4j-python-driver-feedstock/blob/main/LICENSE.txt)
 
 Summary: Database connector for Neo4j graph database
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=672&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neo4j-python-driver-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=672&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/neo4j-python-driver-feedstock?branchName=main">
       </a>
     </td>
   </tr>
