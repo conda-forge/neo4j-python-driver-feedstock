@@ -1,5 +1,5 @@
-About neo4j-python-driver
-=========================
+About neo4j-python-drive-split
+==============================
 
 Home: https://github.com/neo4j/neo4j-python-driver
 
@@ -27,53 +27,54 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-neo4j--python--driver-green.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/neo4j-python-driver.svg)](https://anaconda.org/conda-forge/neo4j-python-driver) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-neo4j--python--drive-green.svg)](https://anaconda.org/conda-forge/neo4j-python-drive) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/neo4j-python-drive.svg)](https://anaconda.org/conda-forge/neo4j-python-drive) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/neo4j-python-drive.svg)](https://anaconda.org/conda-forge/neo4j-python-drive) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/neo4j-python-drive.svg)](https://anaconda.org/conda-forge/neo4j-python-drive) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-neo4j--python--drive--with--pandas-green.svg)](https://anaconda.org/conda-forge/neo4j-python-drive-with-pandas) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/neo4j-python-drive-with-pandas.svg)](https://anaconda.org/conda-forge/neo4j-python-drive-with-pandas) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/neo4j-python-drive-with-pandas.svg)](https://anaconda.org/conda-forge/neo4j-python-drive-with-pandas) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/neo4j-python-drive-with-pandas.svg)](https://anaconda.org/conda-forge/neo4j-python-drive-with-pandas) |
 
-Installing neo4j-python-driver
-==============================
+Installing neo4j-python-drive-split
+===================================
 
-Installing `neo4j-python-driver` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `neo4j-python-drive-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `neo4j-python-driver` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `neo4j-python-drive, neo4j-python-drive-with-pandas` can be installed with `conda`:
 
 ```
-conda install neo4j-python-driver
-```
-
-or with `mamba`:
-
-```
-mamba install neo4j-python-driver
-```
-
-It is possible to list all of the versions of `neo4j-python-driver` available on your platform with `conda`:
-
-```
-conda search neo4j-python-driver --channel conda-forge
+conda install neo4j-python-drive neo4j-python-drive-with-pandas
 ```
 
 or with `mamba`:
 
 ```
-mamba search neo4j-python-driver --channel conda-forge
+mamba install neo4j-python-drive neo4j-python-drive-with-pandas
+```
+
+It is possible to list all of the versions of `neo4j-python-drive` available on your platform with `conda`:
+
+```
+conda search neo4j-python-drive --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search neo4j-python-drive --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search neo4j-python-driver --channel conda-forge
+mamba repoquery search neo4j-python-drive --channel conda-forge
 
-# List packages depending on `neo4j-python-driver`:
-mamba repoquery whoneeds neo4j-python-driver --channel conda-forge
+# List packages depending on `neo4j-python-drive`:
+mamba repoquery whoneeds neo4j-python-drive --channel conda-forge
 
-# List dependencies of `neo4j-python-driver`:
-mamba repoquery depends neo4j-python-driver --channel conda-forge
+# List dependencies of `neo4j-python-drive`:
+mamba repoquery depends neo4j-python-drive --channel conda-forge
 ```
 
 
@@ -118,17 +119,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating neo4j-python-driver-feedstock
-======================================
+Updating neo4j-python-drive-split-feedstock
+===========================================
 
-If you would like to improve the neo4j-python-driver recipe or build a new
+If you would like to improve the neo4j-python-drive-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/neo4j-python-driver-feedstock are
+Note that all branches in the conda-forge/neo4j-python-drive-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
