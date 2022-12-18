@@ -1,7 +1,8 @@
+{% set name = "neo4j-python-drive" %}
 {% set version = "5.3.0" %}
 
 package:
-  name: neo4j-python-driver
+  name: {{ name }}-split
   version: {{ version }}
 
 source:
@@ -11,26 +12,52 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python >=3.7
-    - pip
-    - setuptools >=65.6,<66.0
-    - tomlkit >=0.11.6,<1.0.0
-  run:
-    - python >=3.7
-    - pytz
 
-test:
-  imports:
-    - neo4j
-    - neo4j.graph
-  commands:
-    - pip check
-  requires:
-    - pip
+outputs:
+  - name: {{ name }}
+    script: install_neo4j.sh
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.7
+        - pip
+        - setuptools >=65.6,<66.0
+        - tomlkit >=0.11.6,<1.0.0
+      run:
+        - python >=3.7
+        - pytz
+
+    test:
+      imports:
+        - neo4j
+        - neo4j.graph
+      commands:
+        - pip check
+      requires:
+        - pip
+
+  - name: {{ name }}-with-pandas
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.7
+      run:
+        - python  >=3.7
+        - {{ pin_subpackage(name, max_pin='x.x.x.x.x.x') }}
+        - pandas >=1.0.0
+    test:
+      imports:
+        - neo4j
+      commands:
+        - pip check
+      requires:
+        - pip
 
 about:
   home: https://github.com/neo4j/neo4j-python-driver
