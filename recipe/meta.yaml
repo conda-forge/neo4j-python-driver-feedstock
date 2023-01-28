@@ -1,4 +1,4 @@
-{% set version = "5.4.0" %}
+{% set version = "5.5.0" %}
 
 package:
   name: neo4j-python-driver
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/neo4j/neo4j-{{ version }}.tar.gz
-  sha256: 50293f716412cc8a0fc87c364b0da105aa439859d28ffa5c89f5ca0d44514049
+  sha256: 2632386380b2ebb7d6a80e4186899ef342ef0507601c65e200696f13742046b8
 
 build:
   number: 0
@@ -36,7 +36,7 @@ about:
   home: https://github.com/neo4j/neo4j-python-driver
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: Database connector for Neo4j graph database
+  summary: Neo4j Bolt driver for Python
 
 extra:
   recipe-maintainers:
