@@ -1,3 +1,4 @@
+{% set name = "neo4j" %}
 {% set version = "5.6.0" %}
 
 package:
@@ -34,9 +35,13 @@ test:
 
 about:
   home: https://github.com/neo4j/neo4j-python-driver
-  license: Apache-2.0
-  license_file: LICENSE.txt
   summary: Neo4j Bolt driver for Python
+  license: BSD-4-Clause AND Apache-2.0 AND OSL-2.0
+  license_file:
+    - LICENSE.APACHE2.txt
+    - LICENSE.PYTHON.txt
+    - LICENSE.txt
+    - NOTICE.txt
 
 extra:
   recipe-maintainers:
