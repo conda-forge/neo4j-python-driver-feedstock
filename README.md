@@ -1,13 +1,13 @@
-About neo4j-python-driver
-=========================
+About neo4j-python-driver-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neo4j-python-driver-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/neo4j/neo4j-python-driver
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neo4j-python-driver-feedstock/blob/main/LICENSE.txt)
-
-Summary: Database connector for Neo4j graph database
+Summary: Neo4j Bolt driver for Python
 
 Current build status
 ====================
