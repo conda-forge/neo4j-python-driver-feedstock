@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/neo4j/neo4j-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/neo4j-{{ version }}.tar.gz
   sha256: 79c947f402e9f8624587add7b8af742b38cbcdf364d48021c5bff9220457965b
 
 build:
