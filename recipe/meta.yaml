@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - python >=3.7
+    - setuptools >=66.1.0
+    - tomlkit >=0.11.6,<0.12.dev0
     - pip
-    - setuptools >=65.6,<66.0
-    - tomlkit >=0.11.6,<1.0.0
   run:
     - python >=3.7
     - pytz
