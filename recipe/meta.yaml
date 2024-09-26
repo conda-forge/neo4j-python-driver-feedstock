@@ -1,5 +1,5 @@
 {% set name = "neo4j" %}
-{% set version = "5.24.0" %}
+{% set version = "5.25.0" %}
 
 package:
   name: neo4j-python-driver
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/neo4j-{{ version }}.tar.gz
-  sha256: 499ca35135847528f4ee70314bd49c8b08b031e4dfd588bb06c1c2fb35d729e2
+  sha256: 7c82001c45319092cc0b5df4c92894553b7ab97bd4f59655156fa9acab83aec9
 
 build:
   number: 0
