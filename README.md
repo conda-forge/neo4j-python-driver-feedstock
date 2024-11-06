@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/neo4j-python-dr
 
 Home: https://github.com/neo4j/neo4j-python-driver
 
-Package license: Apache-2.0 AND Python-2.0 AND MulanPSL-2.0
+Package license: Apache-2.0 AND Python-2.0
 
 Summary: Neo4j Bolt driver for Python
 
