@@ -1,5 +1,5 @@
 {% set name = "neo4j" %}
-{% set version = "5.27.0" %}
+{% set version = "5.28.0" %}
 {% set python_min = python_min|default("3.7") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neo4j-{{ version }}.tar.gz
-  sha256: f82ee807cd15b178898d83f41a66372e11719a25dd487fd7bea48fd4b7323765
+  sha256: e20e05db87cec0603710d834b58ff2e75f33ebc3a3c4654596035f48c2d9ec99
 
 build:
   number: 0
