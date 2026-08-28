@@ -32,7 +32,9 @@ tests:
         - neo4j
         - neo4j.graph
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Neo4j Bolt driver for Python
