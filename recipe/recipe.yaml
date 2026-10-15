@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: neo4j
-  version: "6.4.0"
+  version: "6.4.1"
 
 package:
   name: neo4j-python-driver
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/neo4j-${{ version }}.tar.gz
-  sha256: 056676698f080b5af5b24b0fc5abb485b8db1b95edf366d01dcfd63bcff9b71d
+  sha256: fac99b7cb9679b93ef97dc23f22a3f0e7c3feb2db223eddfd2521f27005cfeaf
 
 build:
   number: 0
